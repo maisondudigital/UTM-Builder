@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>URL Builder</title>
+    <style>th, td {
+            padding: 20px;
+            background-color: white;
+            color: black;
+            text-align:center;
+            border: 2px solid black;
+            }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Naming Convention for Digital Ad Campaigns | UTM Builder</h1>
+    <table class="utmBuild" style="table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid grey;
+    align-content: center;">
+        <tr>
+            <td>
+                Website Url (Landing page)<input type="url" id="tb1" placeholder="xyz.com/buynow">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Platform (utm_source)
+                <select type="text" id="tb2">      
+                    <option value="fb">fb</option>
+                    <option value="instagram">instagram</option>
+                    <option value="google">google</option>
+                    <option value="linkedin">linkedin</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Ad Type (utm_medium)
+                <select type="text" id="tb3">      
+                    <option value="wc">wc</option>
+                    <option value="wconv">wconv</option>
+                    <option value="awareness">awareness</option>
+                    <option value="linkedin">linkedin</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Campaign Name (utm_campaign)<input type="text" id="tb4" placeholder="Christmas">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Ad Name (utm_term) <input type="text" id="tb5">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Role
+                <select type="text" id="tb6">      
+                    <option value="awareness">awareness</option>
+                    <option value="intent">intent</option>
+                    <option value="remarketing">remarketing</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Targeting <input type="text" id="tb7">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Location <input type="text" id="tb8">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Language <input type="text" id="tb9">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Creative Type
+                <select type="text" id="tb10">      
+                    <option value="image">image</option>
+                    <option value="gif">gif</option>
+                    <option value="video">video</option>
+                    <option value="text">text</option>
+                    <option value="carousel">carousel</option>
+                    <option value="canvas">canvas</option>
+                    <option value="fb_collection">fb collection</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Size <input type="text"  id="tb11">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Landing Page Name <input type="text"  id="tb12">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Final URL <input type="text" name="textResult" id="concateForm" value="" onkeyup="concatenate()">
+            </td>
+        </tr>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="myFunction()">Copy text</button>
+        </td>
+    </tr>
+    </table>
+    <script src="home.js"></script>
+</body>
+</html>
